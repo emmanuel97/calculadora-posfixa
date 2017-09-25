@@ -29,3 +29,48 @@
    1. desenvolver solução para os testes
    1. apresentar plano de teste e solução
    
+   
+   
+ # 3o Plano de teste - Calculadora Polonesa
+### Membros: 
+- Emmanuel Bulacio
+- Juscelino Messias
+
+### Tecnologias: 
+- Linguagem de programação:
+  - Java 8 Update 141
+- SO:
+  - Linux (Debian 8.x release Jessie) 
+  - Windows 10
+- Ambiente de produção:  
+  - Netbeans IDE 8.2  
+- Ferramenta de Testes:
+  - JUnit 4.12  
+
+# Plano de teste
+
+Entrada | Condição | Classes Válidas | Classes Inválidas
+:-----: | :------: | :-------------: | :---------------:
+  calculo  | calculo é do tipo String    | calculo tem caracteres("+","-","/","*", espaço e numerais)|calculo tem String difentes de "+","-","/","*", " " e numeros
+  calculo  | - | qtdNumeros(calculo) == qtdOperadores(calculo) + 1 | qtdNumeros(calculo) != qtdOperadores(calculo) + 1 
+  calculo  | - | OperadoresNoFinal(calcaulo)==true | OperadoresNoFinal(calcaulo)==false 
+  
+  public boolean OperadoresNoFinal(String calculo){                                                                          operadores misturados com numeros #expresao invalida -- false
+       sequencia de operadores no inicio da string #expresao invalida -- false
+       sequencia de operadores no final da string #expresao valida -- true
+  }
+  
+## 1º caso de teste
+
+
+
+## 2º caso de teste
+
+
+## 3º caso de teste
+
+
+## 4º caso de teste
+
+
+## 5º caso de teste 
