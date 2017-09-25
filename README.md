@@ -52,10 +52,12 @@
 Entrada | Condição | Classes Válidas | Classes Inválidas
 :-----: | :------: | :-------------: | :---------------:
   calculo  | calculo é do tipo String    | calculo tem caracteres("+","-","/","*", espaço e numerais)|calculo tem String difentes de "+","-","/","*", " " e numeros
+  calculo  | - | OperadoresNoFinal(calculo)==true | OperadoresNoFinal(calculo)==false 
   calculo  | - | qtdNumeros(calculo) == qtdOperadores(calculo) + 1 | qtdNumeros(calculo) != qtdOperadores(calculo) + 1 
-  calculo  | - | OperadoresNoFinal(calcaulo)==true | OperadoresNoFinal(calcaulo)==false 
   
-  public boolean OperadoresNoFinal(String calculo){                                                                          operadores misturados com numeros #expresao invalida -- false
+  
+  public boolean OperadoresNoFinal(String calculo){
+       operadores misturados com numeros #expresao invalida -- false
        sequencia de operadores no inicio da string #expresao invalida -- false
        sequencia de operadores no final da string #expresao valida -- true
   }
