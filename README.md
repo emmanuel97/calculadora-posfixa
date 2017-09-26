@@ -116,6 +116,12 @@ Este tutorial apresenta os princípios básicos da escrita e execução de teste
     
     Na primeira vez em que você criar um teste JUnit, o IDE solicita que você selecione uma versão e, em seguida, adiciona o nó Testar Bibliotecas e a biblioteca do JUnit.
 
+- Escrevendo Testes JUnit 4
+Você usará os assistentes do IDE para criar esqueletos de teste com base nas classes em seu projeto. Na primeira vez em que você usar o IDE para criar esqueletos de teste, o IDE solicitará que você escolha a versão da JUnit. 
 
-
+   1. Clique com o botão direito do mouse em Vectors.java e selecione Ferramentas > Criar Testes.
+   2. Modifique o nome da classe de teste para VectorsJUnit4Test na caixa de diálogo Criar Testes. Quando você alterar o nome da classe de teste, será exibido uma advertência sobre a alteração do nome. O nome default é baseado no nome da classe que você está testando, com a palavra Teste acrescentada ao nome. Por exemplo, para a classe MyClass.java, o nome default da classe de teste é MyClassTest.java. Diferente da JUnit 3, na JUnit 4, o teste não precisa ser finalizado com a palavra Teste. Normalmente, é melhor manter o nome default, porém, como você está criando todos os testes da JUnit no mesmo pacote neste tutorial, os nomes das classes de teste devem ser exclusivos.
+   3. Selecione JUnit na lista drop-down Framework.
+   4. Desmarque Inicializador de Teste e Finalizador de Teste. Clique em OK.
+   5. Selecione a JUnit 4.x na caixa de diálogo Selecionar a Versão da JUnit. Clique em Selecionar.
 
