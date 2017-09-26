@@ -97,11 +97,25 @@ Este tutorial apresenta os princípios básicos da escrita e execução de teste
    - Criando as Classes Java 
 
 - Escrevendo Testes JUnit 4
-   - Criando uma Classe de Teste para Vectors.java
-   - Escrevendo Métodos de Teste para Vectors.java
-   - Criando uma Classe de Teste para Utils.java
-   - Escrevendo Métodos de Teste para Utils.java
-   - Executando os Testes
+   1. Criando uma Classe de Teste para Vectors.java
+   2. Escrevendo Métodos de Teste para Vectors.java
+   3. Criando uma Classe de Teste para Utils.java
+   4. Escrevendo Métodos de Teste para Utils.java
+   5. Executando os Testes
+   
+- Para executar as etapas neste tutorial, instale o plug-in do JUnit na Central de Atualização. Você poderá instalar o plug-in do JUnit no gerenciador de Plug-ins se não tiver instalado o plug-in quando instalou o IDE.
+
+- Criando o Projeto de Biblioteca de Classe Java
+   1. Escolha Arquivo > Novo Projeto no menu principal.
+   2. Selecione Biblioteca de Classe Java em Categoria Java e clique em Próximo.
+   3. Insira JUnit-Sample para o projeto e defina a localização do projeto.
+   4. Desmarque a opção Usar Pasta Dedicada, se ela estiver selecionada.
+
+    Para este tutorial, há pouco motivo para copiar as bibliotecas de projeto em uma pasta dedicada, pois você não precisará compartilhar bibliotecas com outros usuários ou projetos.
+    Clique em Finalizar.
+    
+    Na primeira vez em que você criar um teste JUnit, o IDE solicita que você selecione uma versão e, em seguida, adiciona o nó Testar Bibliotecas e a biblioteca do JUnit.
+
 
 
 
