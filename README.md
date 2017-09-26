@@ -75,18 +75,42 @@ calculo= "+ 5 4"
 char[] c = calculo.toCharArray();
 return Character.isDigit(c[0]);  #false
 
+
 ## 3º caso de teste - quantia de numeros deve ser igual a quantia de operadores + 1 - classe valida
 int a,b;
-calculo= "5 4 +";
-a=qtdNumeros(calculo);
-b=qtdOperadores(calculo);
+a=qtdNumeros("5 4 +");
+b=qtdOperadores("5 4 +");
 if(a==b+1)#true
+
 ## 4º caso de teste - quantia de numeros deve ser igual a quantia de operadores + 1- classe invalida
 int a,b;
-calculo= "5 4 + *";
-a=qtdNumeros(calculo);
-b=qtdOperadores(calculo);
+a=qtdNumeros("5 4 + *");
+b=qtdOperadores("5 4 + *");
 if(a==b+1)#false
+
+## 5º caso de teste - a string deve ser uma expressao polonesa - classe valida
+
+verificarExp"5 4 3 + *"); #true
+
+## 6º caso de teste - a string deve ser uma expressao polonesa - classe invalida
+
+verificarExp("5 + 4 * 3"); #false
+
+## 7º caso de teste - a string não deve só deve conter letras e carateres - classe valida
+int a,b,c;
+calculo= "5 4 +";      
+a=qtdNumeros(calculo);   #2
+b=qtdOperadores(calculo);#1
+x=calculo.length();      #3
+a+b==c?               #true
+
+## 8º caso de teste - a string não deve só deve conter letras e carateres - classe invalida
+int a,b,c;
+calculo= "5 4 + e";      
+a=qtdNumeros(calculo);   #2
+b=qtdOperadores(calculo);#1
+x=calculo.length();      #4
+a+b==c?               #false
 
 ## Escrevendo Testes JUnit no NetBeans IDE
 
