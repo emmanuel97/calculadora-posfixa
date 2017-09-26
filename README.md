@@ -29,7 +29,7 @@
    1. desenvolver solução para os testes
    1. apresentar plano de teste e solução
    
-   
+   [Polonesa Inversa]https://pt.wikipedia.org/wiki/Nota%C3%A7%C3%A3o_polonesa_inversa
    
  # 3o Plano de teste - Calculadora Polonesa
 ### Membros: 
@@ -62,17 +62,27 @@ Entrada | Condição | Classes Válidas | Classes Inválidas
        sequencia de operadores no final da string #expresao valida -- true
   }
   
-## 1º caso de teste
+## 1º caso de teste - primeiro caractere e numero - classe valida
+calculo= "5 4 +"
+char[] c = calculo.toCharArray();
+return Character.isDigit(c[0]);  #true
 
+## 2º caso de teste - primeiro caractere e numero - classe invalida
+calculo= "+ 5 4"
+char[] c = calculo.toCharArray();
+return Character.isDigit(c[0]);  #false
 
-
-## 2º caso de teste
-
-
-## 3º caso de teste
-
-
-## 4º caso de teste
-
+## 3º caso de teste - quantia de numeros deve ser igual a quantia de operadores + 1 - classe valida
+int a,b;
+calculo= "5 4 +";
+a=qtdNumeros(calculo);
+b=qtdOperadores(calculo);
+if(a==b+1)#true
+## 4º caso de teste - quantia de numeros deve ser igual a quantia de operadores + 1- classe invalida
+int a,b;
+calculo= "5 4 + *";
+a=qtdNumeros(calculo);
+b=qtdOperadores(calculo);
+if(a==b+1)#false
 
 ## 5º caso de teste 
