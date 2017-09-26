@@ -46,6 +46,9 @@
   - Netbeans IDE 8.2  
 - Ferramenta de Testes:
   - JUnit 4.12  
+  
+### Plano de teste
+- Top-down
 
 # Plano de teste
 
@@ -85,4 +88,20 @@ a=qtdNumeros(calculo);
 b=qtdOperadores(calculo);
 if(a==b+1)#false
 
-## 5º caso de teste 
+## Escrevendo Testes JUnit no NetBeans IDE
+
+Este tutorial apresenta os princípios básicos da escrita e execução de testes de unidade JUnit no NetBeans IDE. O teste de uma aplicação faz parte do ciclo de desenvolvimento, e a escrita e manutenção de testes de unidade podem ajudar a garantir que os métodos individuais em seu código-fonte funcionem corretamente. O suporte integrado do IDE para o framework de teste de unidades JUnit permite que você crie os testes e conjuntos de testes do JUnit de modo fácil e rápido.
+
+- Criando o Projeto
+   - Criando o Projeto de Biblioteca de Classe Java
+   - Criando as Classes Java 
+
+- Escrevendo Testes JUnit 4
+   - Criando uma Classe de Teste para Vectors.java
+   - Escrevendo Métodos de Teste para Vectors.java
+   - Criando uma Classe de Teste para Utils.java
+   - Escrevendo Métodos de Teste para Utils.java
+   - Executando os Testes
+
+
+
