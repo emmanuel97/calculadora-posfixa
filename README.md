@@ -90,7 +90,7 @@ if(a==b+1)#false
 
 ## 5º caso de teste - a string deve ser uma expressao polonesa - classe valida
 
-verificarExp"5 4 3 + *"); #true
+verificarExp("5 4 3 + *"); #true
 
 ## 6º caso de teste - a string deve ser uma expressao polonesa - classe invalida
 
