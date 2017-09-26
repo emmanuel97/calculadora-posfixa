@@ -51,8 +51,8 @@
 
 Entrada | Condição | Classes Válidas | Classes Inválidas
 :-----: | :------: | :-------------: | :---------------:
-  calculo  | calculo é do tipo String    | calculo tem caracteres("+","-","/","*", espaço e numerais)|calculo tem String difentes de "+","-","/","*", " " e numeros
   calculo  | - | primeiro caracter é numero | primeiro caracter não é numero 
+   calculo  | calculo é do tipo String    | calculo tem só caracteres("+","-","/","*", espaço e numerais)|calculo tem String difentes de "+","-","/","*", " " e numeros
   calculo  | - | qtdNumeros(calculo) == qtdOperadores(calculo) + 1 | qtdNumeros(calculo) != qtdOperadores(calculo) + 1 
   
   
